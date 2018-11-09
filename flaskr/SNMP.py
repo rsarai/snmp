@@ -86,7 +86,7 @@ def get_snmp_answer(endIP, Port):
 		#converte de lista para string
 		Qs = ''.join(Q)
 		#print Q
-
+		Qs = str.encode(Qs)
 		#envia frame
 		s.sendto(Qs, (endIP, Port))
 		print('Quadro enviado ...')
