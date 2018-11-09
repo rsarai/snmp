@@ -1,4 +1,6 @@
-# HOW TO RUN
+This is a simple project build for the class of Network Management of the University of Pernambuco.
+
+## HOW TO RUN
 - Use Python 3
 - Clone this repository
 - Go to the repository folder
@@ -10,7 +12,7 @@
 - Go to `http://127.0.0.1:5000/`
 
 
-# SNMP
+## SNMP
 Simple Network Management Protocol (SNMP) is an application-layer protocol used to manage and monitor network devices and their functions. 
 
 SNMP provides a common language for network devices to relay management information within single- and multivendor environments in a local area network (LAN) or wide area network (WAN). The most recent iteration of SNMP, version 3, includes security enhancements that authenticate and encrypt SNMP messages as well as protect packets during transit.
