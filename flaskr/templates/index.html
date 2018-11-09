@@ -1,0 +1,58 @@
+<!doctype html>
+<body style="
+    text-align: center;
+    padding: 30px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 26px;
+  ">
+  <div style="
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+  ">
+    <div style="
+      border: 1px; text-align: left;
+      padding: 20px 20px 20px 20px;
+      border: 2px solid white;
+      border-radius: 8px;
+      text-align: center;
+    ">
+    <h1>SNMP</h1>
+    <form method="post">
+      <label for="ip">IP: </label>
+      <input name="ip" id="ip" required>
+      <br>
+      <br>
+      <label for="port">Port: </label>
+      <input type="port" name="port" id="port" required>
+      <br>
+      <br>
+      <input type="submit" value="RUN" style="
+        border-radius: 8px;
+        padding: 12px 28px;
+        font-size: 12px;
+        background-color: white;
+        color: #1abc9c;
+        border: 0;
+        font-size: 14px;
+        font-weight: bold;
+      ">
+    </form>
+    </div>
+    <br><br>
+    {% if g.answer %}
+      <div style="
+        border: 1px; text-align: left;
+        padding: 20px 20px 20px 20px;
+        border: 2px solid white;
+        border-radius: 8px;
+      ">
+        Response:
+        <br>
+        <p>{{ g.answer }}</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
