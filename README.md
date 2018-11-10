@@ -1,7 +1,7 @@
 This is a simple project build for the class of Network Management of the University of Pernambuco.
 
 ## HOW TO RUN
-- Use Python 3
+- Use Python 2 (Migrate to Python 3 is easy)
 - Clone this repository
 - Go to the repository folder
 - Install Flask: `pip install Flask`

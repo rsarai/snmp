@@ -86,23 +86,23 @@ def get_snmp_answer(endIP, Port):
 		#converte de lista para string
 		Qs = ''.join(Q)
 		#print Q
-		Qs = str.encode(Qs)
+		# Qs = str.encode(Qs)
 		#envia frame
 		s.sendto(Qs, (endIP, Port))
-		print('Quadro enviado ...')
+		print 'Quadro enviado ...'
 
 		#recebe resposta snmp
 		while True:
 			try:
 				Rxbuf = s.recv(4096)
-				print('Resposta Recebida!')
+				print 'Resposta Recebida!'
 				lbuf = list(Rxbuf)
-				print(Rxbuf)
-				print(lbuf)
+				print Rxbuf
+				print lbuf
 				break
 			except socket.timeout:
-				print('TIME OUT!!!')
+				print 'TIME OUT!!!'
 				exit()
 
 		s.close()
-		return Rxbuf
+		return lbuf

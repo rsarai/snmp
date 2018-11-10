@@ -50,6 +50,7 @@ def create_app(test_config=None):
               flash(error)
             
             answer = get_snmp_answer(ip, port)
+            print(answer)
             # answer = "It worked"
             g.answer = answer
         return render_template('/index.html')
