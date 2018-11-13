@@ -2,6 +2,8 @@ This is a simple project build for the class of Network Management of the Univer
 
 ## HOW TO RUN
 - Use Python 2 (Migrate to Python 3 is easy)
+- Install [SNMP Daemon](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-an-snmp-daemon-and-client-on-ubuntu-14-04)
+- Install [SNPM app](https://apkpure.com/br/snmp-agent-4a/jp.snmp_agent4a) mobile on a android smartphone
 - Clone this repository
 - Go to the repository folder
 - Install Flask: `pip install Flask`
